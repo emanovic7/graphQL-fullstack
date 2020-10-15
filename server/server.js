@@ -13,7 +13,8 @@ const app = express();
 
 // Replace with your mongoLab URI
 const MongoClient = require('mongodb').MongoClient;
-const MONGO_URI = 'mongodb+srv://ek_owusu:efQGGYpHzQj37XWW@auth.nmb7r.mongodb.net/test?retryWrites=true&w=majority';
+//const MONGO_URI = 'mongodb+srv://ek_owusu:efQGGYpHzQj37XWW@auth.nmb7r.mongodb.net/test?retryWrites=true&w=majority';
+const MONGO_URI = 'mongodb://ek_owusu:efQGGYpHzQj37XWW@auth-shard-00-00.nmb7r.mongodb.net:27017,auth-shard-00-01.nmb7r.mongodb.net:27017,auth-shard-00-02.nmb7r.mongodb.net:27017/test?ssl=true&replicaSet=atlas-ad408u-shard-0&authSource=admin&retryWrites=true&w=majority';
 if (!MONGO_URI) {
   throw new Error('You must provide a MongoLab URI');
 }
